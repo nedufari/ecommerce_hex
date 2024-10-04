@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Exclude, Expose } from "class-transformer";
-import { Role, Status } from "src/Enums/user-dto/shared-dto/user.enums";
+import { Role, Status } from "src/Enums/shared-enums/user.enums";
 import { EntityRelationalHelper } from "src/utils/relational-entity.helper";
 import { Column, Entity, Index, PrimaryGeneratedColumn } from "typeorm";
 

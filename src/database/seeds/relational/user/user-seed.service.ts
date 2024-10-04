@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Role, Status } from 'src/Enums/user-dto/shared-dto/user.enums';
+import { Role, Status } from 'src/Enums/shared-enums/user.enums';
 import { UserEntity } from 'src/user/infrastructure/persitence/relational/entity/user.entity';
 import { GeneatorService } from 'src/utils/services/generator.service';
 import { Repository } from 'typeorm';

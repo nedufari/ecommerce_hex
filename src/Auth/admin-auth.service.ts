@@ -13,7 +13,7 @@ import { MailService } from 'src/mailer/mailer.service';
 import { InjectRepository } from '@nestjs/typeorm';
 import { OtpEntity } from 'src/utils/sharedEntities/otp.entity';
 import { LessThan, Repository } from 'typeorm';
-import { Role, Status } from 'src/Enums/user-dto/shared-dto/user.enums';
+import { Role, Status } from 'src/Enums/shared-enums/user.enums';
 import { UserRelationalRepository } from 'src/user/infrastructure/persitence/relational/repository/user.repository';
 import { UserMapper } from 'src/user/infrastructure/persitence/relational/mapper/user.mapper';
 import { VerifyOtp } from './dto/verifyOtp.dto';

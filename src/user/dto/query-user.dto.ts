@@ -2,7 +2,9 @@ import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Transform, Type, plainToInstance } from "class-transformer";
 import { IsNumber, IsOptional, IsString, ValidateNested } from "class-validator";
 import { User } from "../domain/user";
-import { Status } from "src/Enums/user-dto/shared-dto/user.enums";
+import { Status } from "src/Enums/user-enum/user.enums";
+
+
 
 export class FilterUserDto {
     @ApiPropertyOptional({ enum:Status })

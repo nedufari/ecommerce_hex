@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Exclude, Expose } from 'class-transformer';
 import { IsEmail, IsString } from 'class-validator';
-import { Role, Status } from 'src/Enums/user-dto/shared-dto/user.enums';
+import { Role, Status } from 'src/Enums/shared-enums/user.enums';
 
 const idType = Number;
 

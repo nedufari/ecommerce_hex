@@ -3,6 +3,9 @@ import { ConfigService } from "@nestjs/config";
 import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from "@nestjs/typeorm";
 import { AdminEntity } from "src/Admin/infrastructure/persistence/relational/entity/admin.entity";
 import { AllConfigType } from "src/config/config.type";
+import { CategoryEntity } from "src/product/infrastructure/persistence/relational/entity/category.entity";
+import { ProductEntity } from "src/product/infrastructure/persistence/relational/entity/product.entity";
+import { SubcategoryEntity } from "src/product/infrastructure/persistence/relational/entity/sub-category.entity";
 import { UserEntity } from "src/user/infrastructure/persitence/relational/entity/user.entity";
 import { NotificationsEntity } from "src/utils/sharedEntities/notification.entity";
 import { OtpEntity } from "src/utils/sharedEntities/otp.entity";
@@ -25,7 +28,7 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
           keepConnectionAlive: true,
           logging:
             this.configService.get('app.nodeEnv', { infer: true }) !== 'production',
-          entities: [UserEntity,AdminEntity,NotificationsEntity,OtpEntity],
+          entities: [UserEntity,AdminEntity,NotificationsEntity,OtpEntity,ProductEntity,CategoryEntity,SubcategoryEntity],
           migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
           cli: {
             entitiesDir: 'src',

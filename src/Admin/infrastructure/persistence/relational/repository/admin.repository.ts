@@ -60,7 +60,7 @@ export class AdminRelationalRepository implements AdminRepository{
     }
 
     async remove(id: number): Promise<void> {
-        await this.adminEntityRepository.delete(id)
+         await this.adminEntityRepository.delete(id)
         
     }
     
