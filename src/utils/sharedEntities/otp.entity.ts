@@ -7,7 +7,8 @@ import {
 
   import { ApiProperty } from '@nestjs/swagger';
 import { EntityRelationalHelper } from '../relational-entity.helper';
-import { Role } from 'src/Enums/shared-enums/user.enums';
+import { Role } from 'src/Enums/user-enum/user.enums';
+
  
   
   @Entity({ name: 'authOtp' })

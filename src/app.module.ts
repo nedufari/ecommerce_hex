@@ -14,6 +14,7 @@ import { NotificationModule } from './utils/modules/notifications.module';
 import { AuthModule } from './Auth/auth.module';
 import { CloudinaryService } from './utils/services/claudinary.service';
 import { CloudinaryConfig } from './utils/claudinary/cloudinary.config';
+import { ProductModule } from './product/product.module';
 
 
 
@@ -23,6 +24,7 @@ import { CloudinaryConfig } from './utils/claudinary/cloudinary.config';
     MailModule,
     UserModule,
     NotificationModule,
+    ProductModule,
     AuthModule,
     TypeOrmModule.forRootAsync({
       useClass:TypeOrmConfigService

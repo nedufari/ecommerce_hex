@@ -13,7 +13,7 @@ import { MailService } from 'src/mailer/mailer.service';
 import { InjectRepository } from '@nestjs/typeorm';
 import { OtpEntity } from 'src/utils/sharedEntities/otp.entity';
 import { LessThan, Repository } from 'typeorm';
-import { Role, Status } from 'src/Enums/shared-enums/user.enums';
+;
 import { UserRelationalRepository } from 'src/user/infrastructure/persitence/relational/repository/user.repository';
 import { UserMapper } from 'src/user/infrastructure/persitence/relational/mapper/user.mapper';
 import { VerifyOtp } from './dto/verifyOtp.dto';
@@ -21,6 +21,7 @@ import { ResendExpiredOtp } from './dto/resendExpiredOtp.dto';
 import { ResetPasswordDto } from './dto/resetpassword.dto';
 import { LoginDto } from './dto/login.dto';
 import { RequestPasswordResetOtp } from './dto/passwordresetOtp.dto';
+import { Role, Status } from 'src/Enums/user-enum/user.enums';
 
 @Injectable()
 export class UserAuthService {
